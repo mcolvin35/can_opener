@@ -29,12 +29,10 @@ def btncall(btnVal):
     if btnVal == True:
         savedTime +=.01
         prevState = True
-        my_servo.throttle = 1
-
+        if savedTime != 0:
+            my_servo.throttle = 1
     elif btnVal == False:
-        
         prevState = False
-        savedTime =0
     print(f"{savedTime} {prevState} {btnVal}")
 
 
