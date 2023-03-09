@@ -8,6 +8,9 @@ btn = DIo.DigitalInOut(board.D5)
 btn.direction = DIo.Direction.INPUT
 btn.pull = DIo.Pull.DOWN
 
+pwm = pwmio.PWMOut(board.D13, duty_cycle=2 ** 15, frequency= 100)
+my_servo = servo.ContinuousServo(pwm, min_pulse=500, max_pulse=2600)
+
 prevState = 0     
 curState = 0  
 savedTime =0
@@ -19,11 +22,14 @@ def btncall(btnVal):
     
     if btnVal == False and prevState == True:
         print("back")
-        pass
-        #go back and 
+        my_servo.throttle = -1
+        time.sleep(savedTime)
+        savedTime = 0
+        #go back 
     if btnVal == True:
         savedTime +=.01
         prevState = True
+        my_servo.throttle = 1
 
     elif btnVal == False:
         
