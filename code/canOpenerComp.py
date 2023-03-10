@@ -42,4 +42,6 @@ def btncall(btnVal):
 while True:
     time.sleep(.01)
     btncall(btn.value)
+
+#by Paul Weder
     
