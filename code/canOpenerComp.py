@@ -3,6 +3,7 @@ import digitalio as DIo
 from adafruit_motor import stepper,servo
 import board
 from analogio import AnalogIn, AnalogOut 
+import pwmio
 
 btn = DIo.DigitalInOut(board.D5)
 btn.direction = DIo.Direction.INPUT
