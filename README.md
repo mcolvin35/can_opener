@@ -8,7 +8,7 @@
 * [Complications](#complications)
 
 ## ***Planning***
-We had many different ideas for how to get the can open, and we eventually settled on a sort of pulley system using a servo as a winch. 
+For this project, we decided to make a machine that opens a soda can at the press of a button. We had many different ideas for how to get the can open, and we eventually settled on a sort of pulley system using a servo as a winch. 
 
 <img src="https://github.com/mcolvin35/can_opener/blob/master/images/sketch.png?raw=true" width="500">
 
@@ -120,4 +120,11 @@ Did you notice the giant metal bar in the gif that wasn't in the sketches or CAD
 
 At one point, when I turned on the machine, I noticed a really weird smell and saw smoke coming out of a hole in the servo. The servo was fried and I had to take apart the whole thing to replace it. 
 
-<img src="https://github.com/mcolvin35/can_opener/blob/master/images/final.gif?raw=true" width="500"> 
+<img src="https://github.com/mcolvin35/can_opener/blob/master/images/servo_incident_marked.png?raw=true" width="500"> 
+
+The reason it fried was because of that plastic thing circled in blue at the bottom. Apparently, it was supposed to be inside the servo in order to keep the wires from crossing over each other. So when I turned it on, the wires cooked each other and I had to waste a whole block period replacing the servo. Lesson learned I guess. 
+
+### **Securing the can**
+ It wasn't a huge problem or anything but if we were to do this project again I would make sure to have some sort of harness to secure the can, which was something I somehow overlooked during the entire design process. That's why I was holding the can down in the video, otherwise it would just be lifted up. 
+
+## **And that's it!**
